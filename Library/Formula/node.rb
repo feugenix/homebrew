@@ -4,7 +4,7 @@ class Node < Formula
   homepage "https://nodejs.org/"
   url "https://nodejs.org/dist/v0.12.7/node-v0.12.7.tar.gz"
   sha256 "b23d64df051c9c969b0c583f802d5d71de342e53067127a5061415be7e12f39d"
-  head "https://github.com/nodejs/node.git", :branch => "v0.12"
+  head "https://github.com/nodejs/node.git", :branch => "v4.x"
   revision 1
 
   bottle do
