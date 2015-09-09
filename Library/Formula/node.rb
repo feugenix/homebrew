@@ -41,11 +41,11 @@ class Node < Formula
     args << "--debug" if build.with? "debug"
     args << "--with-intl=system-icu" if build.with? "icu4c"
 
-    if build.with? "openssl"
-      args << "--shared-openssl"
-    else
-      args << "--without-ssl2" << "--without-ssl3"
-    end
+    #if build.with? "openssl"
+    args << "--shared-openssl"
+    #else
+      #args << "--without-ssl2" << "--without-ssl3"
+    #end
 
     system "./configure", *args
     system "make", "install"
